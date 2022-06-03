@@ -21,9 +21,10 @@ class DefaultController {
   }
   
   @PutMapping(path = {"/"}, consumes = {"application/json"})
-  String receive(@RequestBody String request) throws ClassNotFoundException, IOException, InterruptedException {
+  String receive(@RequestBody String payload) throws ClassNotFoundException, IOException, InterruptedException {
     
     
-    return "success";
+ logger.DEBUG("fetched orders: {}",payload);
+return "success";
   }
 }
