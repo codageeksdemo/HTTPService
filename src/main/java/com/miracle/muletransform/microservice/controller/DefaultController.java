@@ -24,7 +24,7 @@ class DefaultController {
   String receive(@RequestBody String payload) throws ClassNotFoundException, IOException, InterruptedException {
     
     
- logger.DEBUG("fetched orders v2: {}",payload);
+ logger.DEBUG("fetched orders v3: {}",payload);
 return "success";
   }
 }
